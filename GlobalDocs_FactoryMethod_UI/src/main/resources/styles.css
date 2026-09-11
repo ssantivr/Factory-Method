@@ -1,0 +1,267 @@
+/* ==========================================================================
+   GlobalDocs Solutions — Tema oscuro moderno para la GUI JavaFX
+   ========================================================================== */
+
+.root-pane {
+    -fx-background-color: #0f172a;
+    -fx-font-family: "Segoe UI", "Century Gothic", sans-serif;
+}
+
+/* ---------- Encabezado ---------- */
+.header-bar {
+    -fx-background-color: linear-gradient(to right, #0f172a, #16213e);
+    -fx-border-color: transparent transparent #1e293b transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 18 28 18 28;
+}
+
+.header-title {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.header-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12.5px;
+}
+
+.header-badge {
+    -fx-background-color: #10b98122;
+    -fx-text-fill: #34d399;
+    -fx-background-radius: 20;
+    -fx-padding: 5 14 5 14;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Barra lateral ---------- */
+.sidebar {
+    -fx-background-color: #131c31;
+    -fx-padding: 20;
+    -fx-border-color: transparent #1e293b transparent transparent;
+    -fx-border-width: 0 1 0 0;
+}
+
+.section-label {
+    -fx-text-fill: #93c5fd;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: bold;
+}
+
+.field-label {
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 12px;
+}
+
+/* ---------- Tarjetas de país ---------- */
+.country-card {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-border-color: #29354a;
+    -fx-border-width: 1.4;
+    -fx-padding: 10 14 10 14;
+    -fx-text-fill: #e2e8f0;
+    -fx-alignment: CENTER_LEFT;
+    -fx-cursor: hand;
+    -fx-graphic-text-gap: 10;
+}
+
+.country-card .flag-label {
+    -fx-font-size: 18px;
+}
+
+.country-card .country-name {
+    -fx-text-fill: #f1f5f9;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.country-card .country-reg {
+    -fx-text-fill: #7f8ea3;
+    -fx-font-size: 10.2px;
+}
+
+.country-card:hover {
+    -fx-border-color: #38bdf8;
+    -fx-background-color: #22314a;
+}
+
+.country-card:selected {
+    -fx-background-color: #0e2740;
+    -fx-border-color: #38bdf8;
+    -fx-border-width: 1.8;
+    -fx-effect: dropshadow(gaussian, #38bdf855, 12, 0.25, 0, 0);
+}
+
+.country-card:selected .country-name {
+    -fx-text-fill: #7dd3fc;
+}
+
+/* ---------- Combos, spinner ---------- */
+.combo-box, .spinner {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #2c3a52;
+    -fx-mark-color: #94a3b8;
+    -fx-text-fill: #e2e8f0;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #e2e8f0;
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #1e293b;
+    -fx-border-color: #2c3a52;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #29597e;
+}
+
+/* ---------- Botón principal ---------- */
+.primary-button {
+    -fx-background-color: linear-gradient(to right, #10b981, #059669);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 12;
+    -fx-padding: 12 20 12 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #05966955, 10, 0.2, 0, 2);
+}
+
+.primary-button:hover {
+    -fx-background-color: linear-gradient(to right, #34d399, #10b981);
+}
+
+.primary-button:disabled {
+    -fx-opacity: 0.55;
+    -fx-effect: none;
+}
+
+/* ---------- Dashboard de métricas ---------- */
+.metric-card {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: #29354a;
+    -fx-border-width: 1;
+    -fx-padding: 16 22 16 22;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 4;
+}
+
+.metric-label {
+    -fx-text-fill: #7f8ea3;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.metric-value {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f1f5f9;
+}
+
+.metric-total .metric-value { -fx-text-fill: #7dd3fc; }
+.metric-success .metric-value { -fx-text-fill: #34d399; }
+.metric-failed .metric-value { -fx-text-fill: #f87171; }
+
+.metric-total { -fx-border-color: #1d3a57; }
+.metric-success { -fx-border-color: #1a4033; }
+.metric-failed { -fx-border-color: #452325; }
+
+/* ---------- Barra de progreso ---------- */
+.batch-progress .track {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 10;
+}
+
+.batch-progress .bar {
+    -fx-background-color: linear-gradient(to right, #38bdf8, #10b981);
+    -fx-background-radius: 10;
+    -fx-padding: 6;
+}
+
+.progress-percent {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Consola tipo terminal ---------- */
+.console-wrapper {
+    -fx-background-color: #05070d;
+    -fx-background-radius: 14;
+    -fx-border-color: #1e293b;
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+}
+
+.console-header {
+    -fx-padding: 8 14 8 14;
+    -fx-background-color: #0b1120;
+    -fx-background-radius: 14 14 0 0;
+    -fx-border-color: transparent transparent #1e293b transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.console-title {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 10.5px;
+    -fx-font-weight: bold;
+}
+
+.console-dot {
+    -fx-min-width: 10; -fx-min-height: 10;
+    -fx-max-width: 10; -fx-max-height: 10;
+    -fx-background-radius: 50%;
+}
+.dot-red { -fx-background-color: #f87171; }
+.dot-yellow { -fx-background-color: #fbbf24; }
+.dot-green { -fx-background-color: #34d399; }
+
+.console-area {
+    -fx-control-inner-background: #05070d;
+    -fx-background-color: #05070d;
+    -fx-text-fill: #4ade80;
+    -fx-font-family: "Consolas", "Cascadia Mono", monospace;
+    -fx-font-size: 12px;
+    -fx-highlight-fill: #10b98155;
+    -fx-background-insets: 0;
+    -fx-padding: 10;
+}
+
+.console-area .content {
+    -fx-background-color: #05070d;
+}
+
+/* ---------- Scrollbars discretos ---------- */
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+.scroll-bar .thumb {
+    -fx-background-color: #2c3a52;
+    -fx-background-radius: 8;
+}
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+/* ---------- Barra de estado ---------- */
+.status-bar {
+    -fx-background-color: #0b1120;
+    -fx-border-color: #1e293b transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 8 24 8 24;
+}
+
+.status-text {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 10.5px;
+}
