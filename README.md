@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GlobalDocs Solutions — Factory Method Pattern Workshop
 
 Real-world case study: multinational processing of business documents
@@ -35,3 +36,6 @@ src/main/resources/
 - **Concrete products**: `ColombiaDocumentProcessor`, `MexicoDocumentProcessor`, `ArgentinaDocumentProcessor`, `ChileDocumentProcessor`
 - **Creator**: `DocumentProcessorFactory` (factory method `createProcessor()`)
 - **Concrete creators**: `ColombiaProcessorFactory`, `MexicoProcessorFactory`, `ArgentinaProcessorFactory`, `ChileProcessorFactory`
+=======
+# Factory-Method
+>>>>>>> c41e38354b87bf17d06a41e12120af737fd4a63a
